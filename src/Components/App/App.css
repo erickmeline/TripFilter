@@ -1,0 +1,105 @@
+.App {
+  box-sizing: border-box;
+  color: #333;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  width: 100%;
+}
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+.App-title {
+  font-size: 1.5em;
+}
+.App-intro {
+  font-size: large;
+}
+
+header {
+  background-color: #333;
+  padding: 10px;
+}
+main {
+  background-color: #f2f2f2;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+}
+main ul {
+  align-content: stretch;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 20px 0 20px;
+}
+main li {
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  flex-grow: 1;
+  margin: 0 0 20px 0;
+  min-width: 220px;
+  position: relative;
+  top: 0;
+  transition: all .1s ease-in;
+}
+main li:hover {
+  top: -2px;
+  box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+}
+main li a {
+  text-decoration: none;
+}
+main li .imageContainer {
+  overflow: hidden;
+}
+main li .imageContainer:hover .image {
+  transform: scale(1.2);
+}
+main li .image {
+  padding-bottom: 60%;
+  background-size: cover;
+  background-position: center center;
+  transition: all 1s;
+  transition-delay: .2s;
+}
+main li article {
+  color: #999;
+  padding: 20px;
+}
+main li span {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  margin: 2em 0 0 0;
+}
+main li h1 {
+  color: #333;
+  font-size: 20px;
+  margin: 0;
+}
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+@media only screen and (min-width: 740px) {
+  .content {
+    display: flex;
+  }
+  aside, main {
+    float: left;
+  }
+  main ul {
+    padding: 20px 20px 0 0;
+  }
+  main li {
+    flex-basis: 22.25%;
+    margin: 0 0 20px 2.5%;
+  }
+}
